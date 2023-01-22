@@ -1,0 +1,124 @@
+/*navigation toolbar*/
+body{
+	background-color:#59579c;
+	margin:0px;
+}
+nav{
+	display:flex;
+	width:100%;
+	border-bottom:4px solid #59579c;
+}
+nav > .navbar {
+	font-family:Brushstroke,fantasy;
+	background-color:black;
+	padding:2rem 0.5rem;
+	box-sizing:border-box;
+	color:rgb(255,255,255);
+	border-left:4px solid #59579c;
+	display:flex;
+	gap:2rem;
+}
+#part-nav{
+	flex-basis:60%;
+	gap:10rem;
+	align-content:center;
+	justify-content:center;
+	font-size:150%;
+}
+	
+#about-me,
+#title{
+	flex-grow:1;
+}
+#title{
+	padding-top:10px;
+	font-size:200%;
+	font-family:serif;
+	align-content:center;
+	justify-content:center;
+}
+#about-me{
+	color:#8185c7;
+	font-size:150%;
+	align-content:center;
+	justify-content:center;
+}
+a{
+	color:#8185c7;
+}
+#spacer{
+height:2vh;
+]
+}
+/*main content*/
+.content-2,
+.content{
+	box-sizing:border-box;
+	background-color:black;
+	color:#dfd9fa;
+	font-family: Arial, sans-serif;
+	
+}
+#container-2,
+#container-1{
+	flex-grow:1;
+}
+#container-2 > #article-2,
+#container-1 > #article-1{
+	display:grid;
+	height:100%;
+	grid-template-columns:1fr 2fr;
+	grid-template-rows:1fr 5fr;
+}
+#container-2 > #article-2 > .content-2,
+#container-1 > #article-1 > .content{
+	width:100%;
+	border:5px solid black;
+	margin:5px;
+	width:98%;
+}
+#container-2 > #article-2 > .content-2:not(#image-content-2),
+#container-1 > #article-1 > .content:not(#image-content){
+	outline:3px solid #59579c;
+	outline-offset:-15px;
+}
+#title-content-2,
+#title-content{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-size:220%;
+	padding:1rem;
+	font-family: Bodoni MT, serif;
+
+}
+#definition-content-2,
+#definition-content{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	text-align:center;
+	font-size:150%;
+	padding:1rem;
+}
+#description-content-2,
+#description-content{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	padding:2rem;
+	font-size:180%;
+	text-align:justify;
+}
+#image-content{
+	background-image:url("../images/brainstorming.jpg");
+	background-size:cover;
+	padding:15px;
+}
+#image-content-2{
+	background-image:url("../images/references.jpg");
+	background-size:cover;
+	padding:15px;
+}
