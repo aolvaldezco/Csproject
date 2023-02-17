@@ -1,0 +1,67 @@
+/*background styling*/
+body{
+	background-color:black;
+	margin:0px;
+}
+hr
+{
+	color:white;
+}
+h1{
+	text-align:center;
+	color:white;
+	font-family:Arial,sans-serif;
+	line-height:50%;
+	font-size:320%
+}
+#header2
+{
+	text-align:center;
+	color:white;
+	font-family:Arial,sans-serif;
+	font-size:150%;
+	line-height:5%;
+}
+/*navigation  bar*/
+.names
+{
+	color:white;
+	font-size:200%;
+	font-family:Arial,sans-serif;
+	text-align:center;
+}
+.cimages
+{
+	width:230px;
+	height:650px;
+}
+#container{
+	display:flex;
+	width:100%;
+	align-items:center;
+	justify-content:center;
+	box-sizing:border-box;
+}
+/* transition*/
+#container > .images{
+	transition: transform .4s, opacity .4s;
+	transition-timing-function: cubic-bezier(.07,.56,.63,.99);
+	padding:40px;
+	box-sizing:border-box;
+	display:flex;
+
+}
+.images:hover{
+	transform: scale(1.1);
+}
+#container:hover > div:not(:hover){
+	opacity: 50%;
+	transform: scale(0.9);
+}
+
+.links
+{
+	text-align:center;
+	margin:15px
+}
+
